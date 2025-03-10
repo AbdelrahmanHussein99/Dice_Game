@@ -13,35 +13,37 @@
     class=" font-nuntio h-screen bg-linear-to-tl from-[#C5BAFF]  to-[#C4D9FF] flex justify-evenly items-center flex-col ">
     <h1 class=" text-7xl font-bold  text-[#eb4d4d]/90  ">Dice Game</h1>
     <section class=" flex w-1/2  relative drop-shadow-xl">
-      <div
-        class="left w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 rounded-l-2xl  ">
+      <div id="player--0"
+        class="left w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 rounded-l-2xl transition duration-150 ">
         <p class="capitalize text-4xl mb-6 text-slate-900 px-3">Player 1</p>
-        <p class="  text-[#eb4d4d]/90 text-4xl px-3">0</p>
+        <p id="score--0" class="  text-[#eb4d4d]/90 text-4xl px-3">0</p>
         <div class=" flex mt-56 rounded-2xl bg-[#eb4d4d]/90 px-5 py-6 justify-center items-center flex-col">
           <p class="capitalize text-2xl text-slate-900 px-3">Current</p>
-          <p class=" text-[#C4D9FF] text-lg px-3">0</p>
+          <p id="current--0" class=" text-white text-2xl px-3">0</p>
         </div>
       </div>
       <div
         class="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col justify-center items-center">
-        <button class="btns mb-5">New Game</button>
-        <div class="w-18 mt-16">
-          <img class="w-full mb-2" src="src/images/dice-1.png" alt="dice-1">
+        <button id="btn--new" class="btns mb-5">New Game</button>
+        <div class="w-18 mb-2 mt-16">
+          <img id="dice-img" class="w-full " src="src/images/dice-1.png" alt="dice-1">
         </div>
-        <button class="btns  mt-14 mb-5">roll dice</button>
-        <button class="btns ">hold</button>
+        <button id="btn--roll" class="btns  mt-14 mb-5">roll dice</button>
+        <button id="btn--hold" class="btns ">hold</button>
       </div>
-      <div
-        class="right w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 opacity-50 rounded-r-2xl  ">
+      <div id="player--1"
+        class=" w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 opacity-50 rounded-r-2xl transition duration-150 ">
         <p class="capitalize text-4xl mb-6 text-slate-900 px-3">Player 2</p>
-        <p class=" text-[#eb4d4d]/90  text-4xl px-3">0</p>
+        <p id="score--1" class=" text-[#eb4d4d]/90  text-4xl px-3">0</p>
         <div class=" flex mt-56 rounded-2xl  bg-[#eb4d4d]/90 px-5 py-6 justify-center items-center flex-col">
           <p class="capitalize text-2xl text-slate-900 px-3">Current</p>
-          <p class="text-[#C4D9FF] text-lg px-3">0</p>
+          <p id="current--1" class="text-[#C4D9FF] text-xl px-3">0</p>
         </div>
       </div>
     </section>
   </main>
+
+
   <script src="src/JS/script.js"></script>
 </body>
 

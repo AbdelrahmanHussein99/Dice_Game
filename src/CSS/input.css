@@ -6,6 +6,11 @@
     sans-serif;
 }
 
+.hidden-visb {
+  @apply invisible;
+
+}
+
 .btns {
-  @apply capitalize bg-white/80 rounded-3xl px-6 py-2 drop-shadow-md
+  @apply capitalize bg-white/80 rounded-3xl px-6 py-2 drop-shadow-md cursor-pointer active:opacity-70 transition duration-150
 }
