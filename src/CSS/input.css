@@ -12,5 +12,9 @@
 }
 
 .btns {
-  @apply capitalize bg-white/80 rounded-3xl px-6 py-2 drop-shadow-md cursor-pointer active:opacity-70 transition duration-150
+  @apply bg-white/80 uppercase rounded-3xl px-6 py-2 drop-shadow-md cursor-pointer active:opacity-70 transition duration-150
+}
+
+.player {
+  @apply w-1/2 px-5 py-8 flex justify-center items-center flex-col backdrop-blur-2xl transition duration-700
 }

@@ -10,15 +10,14 @@
 
 <body>
   <main
-    class=" font-nuntio h-screen bg-linear-to-tl from-[#C5BAFF]  to-[#C4D9FF] flex justify-evenly items-center flex-col ">
-    <h1 class=" text-7xl font-bold  text-[#eb4d4d]/90  ">Dice Game</h1>
+    class=" font-semibold font-nuntio h-screen bg-linear-to-tl from-[#C5BAFF]  to-[#C4D9FF] flex justify-evenly items-center flex-col ">
+    <h1 class=" text-7xl font-bold uppercase  text-[#eb4d4d]/90  ">Dice Game</h1>
     <section class=" flex w-1/2  relative drop-shadow-xl">
-      <div id="player--0"
-        class="left w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 rounded-l-2xl transition duration-150 ">
-        <p class="capitalize text-4xl mb-6 text-slate-900 px-3">Player 1</p>
+      <div id="player--0" class="left player  bg-[#FBFBFB]/60   rounded-l-2xl">
+        <p class="uppercase text-4xl mb-6 font-bold text-slate-900 px-3">Player 1</p>
         <p id="score--0" class="  text-[#eb4d4d]/90 text-4xl px-3">0</p>
         <div class=" flex mt-56 rounded-2xl bg-[#eb4d4d]/90 px-5 py-6 justify-center items-center flex-col">
-          <p class="capitalize text-2xl text-slate-900 px-3">Current</p>
+          <p class="uppercase text-2xl  text-slate-900 px-3">Current</p>
           <p id="current--0" class=" text-white text-2xl px-3">0</p>
         </div>
       </div>
@@ -29,14 +28,13 @@
           <img id="dice-img" class="w-full " src="src/images/dice-1.png" alt="dice-1">
         </div>
         <button id="btn--roll" class="btns  mt-14 mb-5">roll dice</button>
-        <button id="btn--hold" class="btns ">hold</button>
+        <button id="btn--hold" class="btns  ">hold</button>
       </div>
-      <div id="player--1"
-        class=" w-1/2 px-5 py-8 flex justify-center items-center flex-col  backdrop-blur-2xl  bg-[#FBFBFB]/60 opacity-50 rounded-r-2xl transition duration-150 ">
-        <p class="capitalize text-4xl mb-6 text-slate-900 px-3">Player 2</p>
+      <div id="player--1" class="right player  bg-[#FBFBFB]/60 rounded-r-2xl opacity-50 ">
+        <p class="uppercase text-4xl mb-6 font-bold text-slate-900 px-3">Player 2</p>
         <p id="score--1" class=" text-[#eb4d4d]/90  text-4xl px-3">0</p>
         <div class=" flex mt-56 rounded-2xl  bg-[#eb4d4d]/90 px-5 py-6 justify-center items-center flex-col">
-          <p class="capitalize text-2xl text-slate-900 px-3">Current</p>
+          <p class="uppercase text-2xl   text-slate-900 px-3">Current</p>
           <p id="current--1" class="text-[#C4D9FF] text-xl px-3">0</p>
         </div>
       </div>
